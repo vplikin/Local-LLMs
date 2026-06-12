@@ -1,0 +1,23 @@
+{
+  "captured_at": "2026-06-12T10:41:50Z",
+  "host": "localhost:11434",
+  "model": "hf.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF:UD-Q4_K_XL",
+  "digest": "ec94fe5da7eb9c046c7b28fb2e1b132a0ebb602d5ab4ebbb6173305304c3ab3e",
+  "ollama_version": "0.30.7",
+  "model_details": {
+    "format": "gguf",
+    "family": "gemma4",
+    "parameter_size": "25.2B",
+    "quantization_level": "Q4_0",
+    "quantization_label": "UD-Q4_K_XL (Unsloth dynamic QAT)",
+    "context_length": 262144,
+    "embedding_length": 2816,
+    "layers": 30,
+    "sliding_window": 1024,
+    "expert_used_count": 8,
+    "expert_count": 128,
+    "size_bytes": 15443874216,
+    "capabilities": ["completion", "vision"]
+  },
+  "hardware_note": "RTX 4080 Super 16 GB VRAM"
+}

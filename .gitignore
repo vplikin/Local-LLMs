@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local overrides (keep defaults in repo)
+local.config
+
+# HumanEval sandbox artifacts
+/tmp/
+*.pyc

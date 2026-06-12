@@ -1,0 +1,1 @@
+Summarize the key trade-offs when running a 26B Mixture-of-Experts language model on a consumer GPU with 16 GB of VRAM. Cover model weight footprint, KV cache growth with context length, and when CPU offload becomes unavoidable. Be concise and factual.

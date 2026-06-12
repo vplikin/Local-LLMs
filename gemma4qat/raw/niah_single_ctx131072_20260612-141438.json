@@ -1,0 +1,58 @@
+[
+  {
+    "mode": "single",
+    "num_ctx": 131072,
+    "depth_pct": 0,
+    "found": true,
+    "answer": "ratatoskr-7741",
+    "prompt_tokens": 74791
+  },
+  {
+    "mode": "single",
+    "num_ctx": 131072,
+    "depth_pct": 10,
+    "found": true,
+    "answer": "ratatoskr-7741",
+    "prompt_tokens": 74791
+  },
+  {
+    "mode": "single",
+    "num_ctx": 131072,
+    "depth_pct": 25,
+    "found": true,
+    "answer": "ratatoskr-7741",
+    "prompt_tokens": 74791
+  },
+  {
+    "mode": "single",
+    "num_ctx": 131072,
+    "depth_pct": 50,
+    "found": true,
+    "answer": "ratatoskr-7741",
+    "prompt_tokens": 74791
+  },
+  {
+    "mode": "single",
+    "num_ctx": 131072,
+    "depth_pct": 75,
+    "found": true,
+    "answer": "ratatoskr-7741",
+    "prompt_tokens": 74791
+  },
+  {
+    "mode": "single",
+    "num_ctx": 131072,
+    "depth_pct": 90,
+    "found": true,
+    "answer": "ratatoskr-7741",
+    "prompt_tokens": 74791
+  },
+  {
+    "mode": "single",
+    "num_ctx": 131072,
+    "depth_pct": 100,
+    "found": true,
+    "answer": "ratatoskr-7741",
+    "prompt_tokens": 74791
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "task": "ifeval",
+    "n": 15,
+    "reps": 3,
+    "accuracy": 0.8,
+    "unstable": 0
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "mode": "multi",
+    "num_ctx": 131072,
+    "depth_pct": null,
+    "found": 3,
+    "total": 3,
+    "answer": "vault_access_code=ratatoskr-7741\nrelay_callsign=anatr0p-zulu\ncheckpoint_phrase=lord-yorkshire-9",
+    "prompt_tokens": 74838
+  }
+]

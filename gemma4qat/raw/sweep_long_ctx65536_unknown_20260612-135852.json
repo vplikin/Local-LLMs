@@ -1,0 +1,101 @@
+{
+  "summary": {
+    "label": "sweep_long",
+    "model": "hf.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF:UD-Q4_K_XL",
+    "num_ctx": 65536,
+    "kv_cache": "unknown",
+    "num_predict": 64,
+    "reps_measured": 3,
+    "prompt_tokens": 37369,
+    "prefill_tok_s": {
+      "median": 492728.20769768325,
+      "mean": 368864.3752595168,
+      "stddev": 262854.3899005409,
+      "min": 3399.991756823753,
+      "max": 610464.9263240435,
+      "n": 3
+    },
+    "decode_tok_s": {
+      "median": 80.1136917782453,
+      "mean": 78.76499426597779,
+      "stddev": 1.9701976444318274,
+      "min": 75.97918170421305,
+      "max": 80.202109315475,
+      "n": 3
+    },
+    "ttft_s": {
+      "median": 11.769031584030017,
+      "mean": 30.34529547234221,
+      "stddev": 26.729751046745637,
+      "min": 11.121829750016332,
+      "max": 68.14502508298028,
+      "n": 3
+    },
+    "load_s": {
+      "median": 0.4325811,
+      "mean": 19.203710966666666,
+      "stddev": 26.54846033898584,
+      "min": 0.4296482,
+      "max": 56.7489036,
+      "n": 3
+    },
+    "total_s": {
+      "median": 12.3316679,
+      "mean": 30.936235033333332,
+      "stddev": 26.769313332466265,
+      "min": 11.6851166,
+      "max": 68.7919206,
+      "n": 3
+    }
+  },
+  "runs": [
+    {
+      "prompt_tokens": 37369,
+      "gen_tokens": 50,
+      "prefill_tok_s": 3388.9230127996257,
+      "decode_tok_s": 75.9170014606431,
+      "ttft_s": 64.78594745905139,
+      "load_s": 53.369387,
+      "total_s": 65.4275718,
+      "wall_s": 66.4346418750938,
+      "rep": 0,
+      "warmup": true
+    },
+    {
+      "prompt_tokens": 37369,
+      "gen_tokens": 46,
+      "prefill_tok_s": 610464.9263240435,
+      "decode_tok_s": 80.1136917782453,
+      "ttft_s": 11.769031584030017,
+      "load_s": 0.4325811,
+      "total_s": 12.3316679,
+      "wall_s": 13.32677845901344,
+      "rep": 1,
+      "warmup": false
+    },
+    {
+      "prompt_tokens": 37369,
+      "gen_tokens": 50,
+      "prefill_tok_s": 3399.991756823753,
+      "decode_tok_s": 75.97918170421305,
+      "ttft_s": 68.14502508298028,
+      "load_s": 56.7489036,
+      "total_s": 68.7919206,
+      "wall_s": 70.43433995801024,
+      "rep": 2,
+      "warmup": false
+    },
+    {
+      "prompt_tokens": 37369,
+      "gen_tokens": 46,
+      "prefill_tok_s": 492728.20769768325,
+      "decode_tok_s": 80.202109315475,
+      "ttft_s": 11.121829750016332,
+      "load_s": 0.4296482,
+      "total_s": 11.6851166,
+      "wall_s": 13.34325058304239,
+      "rep": 3,
+      "warmup": false
+    }
+  ]
+}

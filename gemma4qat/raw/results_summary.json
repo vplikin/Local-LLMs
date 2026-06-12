@@ -1,0 +1,71 @@
+{
+  "benchmark": "gemma4qat",
+  "date": "2026-06-12",
+  "model": "hf.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF:UD-Q4_K_XL",
+  "digest": "ec94fe5da7eb9c046c7b28fb2e1b132a0ebb602d5ab4ebbb6173305304c3ab3e",
+  "hardware": "RTX 4080 Super 16 GB VRAM",
+  "ollama": "0.30.7",
+  "kv_cache_mode": "unknown",
+  "throughput": {
+    "ctx8192_short_prompt": {
+      "prompt_tokens": 69,
+      "prefill_tok_s_median": 1258,
+      "decode_tok_s_median": 125,
+      "ttft_s_median": 0.65,
+      "peak_vram_gib": 13.6,
+      "artifact": "baseline8192_ctx8192_unknown_20260612-134230.json"
+    },
+    "ctx65536_long_prompt": {
+      "prompt_tokens": 37369,
+      "prefill_tok_s_median": 3400,
+      "decode_tok_s_median": 80,
+      "ttft_s_median_cold": 65,
+      "peak_vram_gib": 12.4,
+      "cpu_offload_gib": 2.1,
+      "artifact": "sweep_long_ctx65536_unknown_20260612-135852.json"
+    },
+    "ctx131072_long_prompt": {
+      "prompt_tokens": 74764,
+      "prefill_tok_s_median": 2412,
+      "decode_tok_s_median": 63,
+      "ttft_s_median": 78,
+      "peak_vram_gib": 12.4,
+      "artifact": "sweep_ctx131072_unknown_20260612-140050.json"
+    },
+    "ctx262144_long_prompt": {
+      "prompt_tokens": 149509,
+      "prefill_tok_s_median": 1524,
+      "decode_tok_s_median": 44,
+      "ttft_s_median": 132,
+      "peak_vram_gib": 12.4,
+      "artifact": "sweep_ctx262144_unknown_20260612-141017.json"
+    }
+  },
+  "niah": {
+    "single_needle_score": {
+      "65536": "7/7",
+      "131072": "7/7",
+      "262144": "7/7"
+    },
+    "multi_needle_score": {
+      "65536": "3/3",
+      "131072": "3/3",
+      "262144": "2/3"
+    },
+    "artifact": "niah_matrix.csv"
+  },
+  "quality_num_ctx8192": {
+    "gsm8k_n30": 0.967,
+    "humaneval_n20_pass1": 0.9,
+    "ifeval_n15": 0.8,
+    "multilingual_n10": 1.0,
+    "params": "temperature=0, seed=0, 3 reps",
+    "artifact": "quality_summary.csv"
+  },
+  "not_measured": [
+    "OLLAMA_KV_CACHE_TYPE f16 vs q8_0 sweep",
+    "nvidia-smi power/temperature",
+    "draft-MTP speculative decoding",
+    "llama.cpp build version"
+  ]
+}
